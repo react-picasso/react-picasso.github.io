@@ -9,95 +9,100 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-    <header class="header">
-      <img src="./assets/PK.png" alt="logo" />
+    <div class="loading-overlay">
+      <img src="./assets/PK.svg" alt="Loading..." />
+    </div>
+    <div class="content">
+      <header class="header">
+        <img src="./assets/PK.png" alt="logo" />
 
-      <nav class="navbar">
-        <a href="#" class="active">Home</a>
-        <a href="#">About</a>
-        <a href="#">Experience</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
+        <nav class="navbar">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Experience</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
 
-    <section class="home">
-      <div class="home-content">
-        <h1>Hi, I'm Prathamesh Kulkarni</h1>
-        <h2>Frontend Developer</h2>
-        <p>I'm an avid front-end React developer. I have a strong skill set in crafting and deploying responsive websites and web applications 🚀</p>
-        <div class="profile-logo">
-          <div class="linkedin-logo">
-            <a href="https://www.linkedin.com/in/prathamesh-kulkarni-1908/" target="_blank">
-              <box-icon type="logo" name="linkedin-square" size="lg"></box-icon>
+      <section class="home">
+        <div class="home-content">
+          <h1>Hi, I'm Prathamesh Kulkarni</h1>
+          <h2>Frontend Developer</h2>
+          <p>I'm an avid front-end React developer. I have a strong skill set in crafting and deploying responsive websites and web applications 🚀</p>
+          <div class="profile-logo">
+            <div class="linkedin-logo">
+              <a href="https://www.linkedin.com/in/prathamesh-kulkarni-1908/" target="_blank">
+                <box-icon type="logo" name="linkedin-square" size="lg"></box-icon>
+            </div>
+            <div class="github-logo">
+              <a href="https://github.com/react-picasso" target="_blank">
+                <box-icon type="logo" name="github" size="lg"></box-icon>
+              </a>
+            </div>
           </div>
-          <div class="github-logo">
-            <a href="https://github.com/react-picasso" target="_blank">
-              <box-icon type="logo" name="github" size="lg"></box-icon>
-            </a>
+          <div class="tech-stack">
+            Tech Stack
+            <div class="tech-stack__vertical-line">
+            </div>
+            <div class="tech-stack__logos">
+              <box-icon type='logo' name='html5' size="md"></box-icon>
+              <box-icon type='logo' name='css3' size="md"></box-icon>
+              <box-icon type='logo' name='javascript' size="md"></box-icon>
+              <box-icon type='logo' name='react' size="md"></box-icon>
+              <box-icon type='logo' name='sass' size="md"></box-icon>
+            </div>
           </div>
         </div>
-        <div class="tech-stack">
-          Tech Stack
-          <div class="tech-stack__vertical-line">
+        <div class="home-img">
+          <img src="./assets/profile-pic.png" alt="profile-pic" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-content">
+          <h1>About Me</h1>
+          <div class="svg-holder__primary">
+            <img src="./assets/coder.png" alt="coder" />
           </div>
-          <div class="tech-stack__logos">
-            <box-icon type='logo' name='html5' size="md"></box-icon>
-            <box-icon type='logo' name='css3' size="md"></box-icon>
-            <box-icon type='logo' name='javascript' size="md"></box-icon>
-            <box-icon type='logo' name='react' size="md"></box-icon>
-            <box-icon type='logo' name='sass' size="md"></box-icon>
+        </div>
+        <div class="about-content__text">
+          <h3>Crafting engaging user-experiences: Unleashing the power of React in Front-End development</h3>
+          <p>Welcome! I am a skilled front-end developer specializing in React, HTML, CSS, and SASS. With a keen eye for design and a passion for clean, efficient code, I create engaging user experiences that seamlessly blend form and function. Leveraging the power of React, I transform ideas into responsive and interactive web applications, while utilizing HTML and CSS to ensure pixel-perfect precision and visual appeal. With my expertise in SASS, I effortlessly style and maintain scalable and modular codebases. Collaboration and teamwork are at the heart of my approach to front-end development.</p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-content">
+          <h1>Contact Me</h1>
+          <div class="contactless-logo">
+            <img src="./assets/contactless.svg" alt="contactless" />
           </div>
         </div>
-      </div>
-      <div class="home-img">
-        <img src="./assets/profile-pic.png" alt="profile-pic" />
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about-content">
-        <h1>About Me</h1>
-        <div class="svg-holder__primary">
-          <img src="./assets/coder.png" alt="coder" />
+        <div class="content-form">
+          <form 
+              method="POST"
+              action="https://formspree.io/f/mjvdqrpr"
+          >
+            <label>
+              <input type="text" name="name" placeholder="Name"/>
+            </label>
+            <label>
+              <input type="email" name="email" placeholder="Email" />
+            </label>
+            <label>
+              <input type="text" name="subject" placeholder="Subject" />
+            </label>
+            <label>
+              <textarea name="message" placeholder="Message"></textarea>
+            </label>
+            <div class="contact-form__button">
+              <button type="submit">Send</button>
+            </div>
+          </form>
         </div>
-      </div>
-      <div class="about-content__text">
-        <h3>Crafting engaging user-experiences: Unleashing the power of React in Front-End development</h3>
-        <p>Welcome! I am a skilled front-end developer specializing in React, HTML, CSS, and SASS. With a keen eye for design and a passion for clean, efficient code, I create engaging user experiences that seamlessly blend form and function. Leveraging the power of React, I transform ideas into responsive and interactive web applications, while utilizing HTML and CSS to ensure pixel-perfect precision and visual appeal. With my expertise in SASS, I effortlessly style and maintain scalable and modular codebases. Collaboration and teamwork are at the heart of my approach to front-end development.</p>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="contact-content">
-        <h1>Contact Me</h1>
-        <div class="contactless-logo">
-          <img src="./assets/contactless.svg" alt="contactless" />
-        </div>
-      </div>
-      <form 
-          class="contact-form"
-          method="POST"
-          action="https://formspree.io/f/mjvdqrpr"
-      >
-        <label>
-          <input type="text" name="name" placeholder="Name"/>
-        </label>
-        <label>
-          <input type="email" name="email" placeholder="Email" />
-        </label>
-        <label>
-          <input type="text" name="subject" placeholder="Subject" />
-        </label>
-        <label>
-          <textarea name="message" placeholder="Message"></textarea>
-        </label>
-        <div class="contact-form__button">
-          <button type="submit">Send</button>
-        </div>
-      </form>
-    </section>
-
+      </section>
+    </div>
     <script type="module" src="/main.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>

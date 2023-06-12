@@ -11,6 +11,70 @@ body {
   background: #D6C8B9;
 }
 
+.content {
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.content.appear {
+  display: block;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.loading-overlay img {
+  width: 5rem;
+  -webkit-animation: rotate-logo 1.5s ease 0s infinite normal;
+          animation: rotate-logo 1.5s ease 0s infinite normal;
+  border-radius: 0%;
+}
+
+.loading-overlay.disappear {
+  display: none;
+}
+
+@-webkit-keyframes rotate-logo {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(356deg);
+            transform: rotateY(356deg);
+  }
+}
+
+@keyframes rotate-logo {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(356deg);
+            transform: rotateY(356deg);
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -181,21 +245,21 @@ img {
   align-items: center;
   width: 100%;
   max-width: 800px;
+  justify-content: center;
+}
+
+.contact-content {
+  max-width: 800px;
 }
 
 .contact-form {
+  background: yellow;
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 800px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 800px;
-  justify-content: center;
+  margin-top: 67px;
+  padding: 10px 0;
 }
 
 input, textarea {
