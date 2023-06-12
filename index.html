@@ -68,6 +68,36 @@
       </div>
     </section>
 
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <h1>Contact Me</h1>
+        <div class="contactless-logo">
+          <img src="./assets/contactless.svg" alt="contactless" />
+        </div>
+      </div>
+      <form 
+          class="contact-form"
+          method="POST"
+          action="https://formspree.io/f/mjvdqrpr"
+      >
+        <label>
+          <input type="text" name="name" placeholder="Name"/>
+        </label>
+        <label>
+          <input type="email" name="email" placeholder="Email" />
+        </label>
+        <label>
+          <input type="text" name="subject" placeholder="Subject" />
+        </label>
+        <label>
+          <textarea name="message" placeholder="Message"></textarea>
+        </label>
+        <div class="contact-form__button">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+
     <script type="module" src="/main.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>

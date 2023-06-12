@@ -73,7 +73,7 @@ h2 {
 .home-content p {
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 img {
@@ -131,6 +131,7 @@ img {
   display: flex;
   align-items: center;
   padding: 0 10%;
+  height: 100vh;
 }
 
 .about-content {
@@ -163,4 +164,73 @@ img {
 .about-content__text p {
   margin-bottom: 0;
   font-size: 20px;
+}
+
+.contact {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0 10%;
+  height: 100vh;
+}
+
+.contactless-logo img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+}
+
+input, textarea {
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  padding: 0 20px;
+  margin-left: 45px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  background: #baaea1;
+}
+
+textarea {
+  height: 150px;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.contact-form__button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0;
+}
+
+button {
+  background: #898076;
+  border-radius: 20px;
+  width: 120px;
+  height: 48px;
+  justify-content: center;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  margin-top: 20px;
 }
