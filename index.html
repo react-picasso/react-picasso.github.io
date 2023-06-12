@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/styles.css">
-  <title>Prathamesh Kulkarni | Front-End React Developer</title>
-  <script src="./scripts/main.js" defer></script>
-</head>
-<body>
-  <div class="loading-overlay">
-    <img src="./assets/logo.png" alt="Loading..." />
-  </div>
-  <div class="content">
-    <nav class="nav">
-      <img src="./assets/logo.png" alt="Prathamesh Kulkarni" />
-    </nav>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/PK.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prathamesh Kulkarni</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/PK.png" alt="logo" />
+
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Experience</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="home-content">
+        <h1>Hi, I'm Prathamesh Kulkarni</h1>
+        <h2>Frontend Developer</h2>
+        <p>I'm an avid front-end React developer. I have a strong skill set in crafting and deploying responsive websites and web applications 🚀</p>
+        <div class="profile-logo">
+          <div class="linkedin-logo">
+            <a href="https://www.linkedin.com/in/prathamesh-kulkarni-1908/" target="_blank">
+              <box-icon type="logo" name="linkedin-square" size="lg"></box-icon>
+          </div>
+          <div class="github-logo">
+            <a href="https://github.com/react-picasso" target="_blank">
+              <box-icon type="logo" name="github" size="lg"></box-icon>
+            </a>
+          </div>
+        </div>
+        <div class="tech-stack">
+          Tech Stack
+          <div class="tech-stack__vertical-line">
+          </div>
+          <div class="tech-stack__logos">
+            <box-icon type='logo' name='html5' size="md"></box-icon>
+            <box-icon type='logo' name='css3' size="md"></box-icon>
+            <box-icon type='logo' name='javascript' size="md"></box-icon>
+            <box-icon type='logo' name='react' size="md"></box-icon>
+            <box-icon type='logo' name='sass' size="md"></box-icon>
+          </div>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="./assets/profile-pic.png" alt="profile-pic" />
+      </div>
+    </section>
+
+    <section class="about">
+
+    </section>
+
+    <script type="module" src="/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
 </html>

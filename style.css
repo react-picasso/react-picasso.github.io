@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background: #D6C8B9;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+.header img {
+  width: 78px;
+  height: 64px;
+  border-radius: 0%;
+}
+
+.navbar a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  margin-left: 35px;
+  transition: text-decoration-color 0.3s ease-in-out;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+}
+
+.navbar a:hover,
+.navbar a.active {
+  text-decoration-color: rgba(0, 0, 0, 1);
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50%;
+}
+
+.profile-logo {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin-logo img {
+  padding: 0;
+  width: 50%;
+  height: 58px;
+  margin-right: 20px;
+}
+
+.github-logo img {
+  width: 50%;
+  height: 57px;
+}
+
+.tech-stack {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.tech-stack img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.tech-stack__vertical-line {
+  height: 32px;
+  width: 5px;
+  background: #000;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tech-stack__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
